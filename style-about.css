@@ -1,0 +1,74 @@
+.features-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #333; /* Or any color that fits your design */
+    font-family: 'Reem Kufi Ink', sans-serif; /* Using the custom font you linked */
+}
+.feature-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feature {
+    border: 1px solid black; /* Fine black border */
+    border-radius: 8px; /* Rounded edges */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background: white;
+    width: 80%;
+    border-radius: 4px; /* Optional: to have rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    transform: scale(1); /* Default scale */
+}
+
+.feature:hover {
+    transform: scale(1.03); /* Slightly increase size on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+}
+
+.feature-image img {
+    width: 80%;
+    height: auto;
+    display: block;
+    overflow: hidden; /* In case of rounded corners, to clip the image */
+    border-radius: 4px; /* Optional: to have rounded corners */
+}
+
+.feature-text {
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+.feature:nth-child(odd) .feature-image {
+    order: 2;
+}
+
+.feature:nth-child(odd) .feature-text {
+    order: 1;
+}
+
+.feature:nth-child(even) .feature-image {
+    order: 1;
+}
+
+.feature:nth-child(even) .feature-text {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature-image img, .feature-text {
+        width: 100%;
+    }
+}

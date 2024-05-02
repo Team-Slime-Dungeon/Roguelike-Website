@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Roguelike Dungeon Crawler</title>
 	<link rel="stylesheet" href="style.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- Swiper's JavaScript -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
@@ -16,9 +20,13 @@
 		<nav>
 			<div class="menu">
 				<!-- logo -->
+				<div class="logo2">
+					<img src="img/csunicon.png">
+				</div>
 				<div class="logo">
 					<img src="img/title.png">
 				</div>
+				
 				
 				<!-- Menu Bar Code -->
 				<input type="checkbox" id="check">
@@ -49,19 +57,164 @@
 		</nav>
 		<!-- Top Header Code End -->
 		
-		<!-- Content -->
-		<div class="container">
-			<div class="InnerDiv">
-				<div class="center">
-					<p class="title">Such an amazing game with beautiful features!</p>
-					<p class="sub_des">We have created a game with amazing features and challenging levels which will take your adventure to another level, come and find out by yourself!</p>
-					<div class="btns">
-						<button>Play Now!</button>
+		<!-- ***** Main Banner Area Start ***** -->
+		<div class="swiper-container" id="top">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<div
+				  class="slide-inner"
+				  style="background-image: url(img/slide-01.gif)"
+				>
+				  <div class="container">
+					<div class="row">
+					  <div class="col-lg-8">
+						<div class="header-text">
+						  <h2>
+							Get <em>ready</em> for your next favorite<br /><em
+							  >slime</em
+							>
+							based dungeon crawler.
+						  </h2>
+						  <div class="div-dec"></div>
+						  <p>
+							Roguelike Dungeon Crawler is the newest upcoming dungeon
+							crawler brought to you by Team Slime. This game will have
+							you fighting off hoards of monsters and collecting
+							treasure through dozens of randomly generated worlds.
+						  </p>
+						  <div class="buttons">
+							<div class="green-button">
+							  <a href="#purpose">Our Purpose</a>
+							</div>
+							<div class="orange-button">
+							  <a href="Contact.html">Contact Us</a>
+							</div>
+						  </div>
+						</div>
+					  </div>
 					</div>
+				  </div>
 				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div
+				  class="slide-inner"
+				  style="background-image: url(img/slide-02.gif)"
+				>
+				  <div class="container">
+					<div class="row">
+					  <div class="col-lg-8">
+						<div class="header-text">
+						  <h2>
+							<em>Explore</em> The Many <br /> Different
+							<em>Features</em> Our Game Has
+						  </h2>
+						  <div class="div-dec"></div>
+						  <p>
+							This roguelike dungeon crawler game consists of many different features
+							that enable the player to experience an immersive and enjoyable game. These 
+							features also give the player the opportunity to personalize their game to 
+							better suit their play style.
+						  </p>
+						  <div class="buttons">
+							<div class="green-button">
+							  <a href="About.html">Explore Features</a>
+							</div>
+							<div class="orange-button">
+							  <a href="Contact.html">Contact Us</a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div
+				  class="slide-inner"
+				  style="background-image: url(img/slide-03.gif)"
+				>
+				  <div class="container">
+					<div class="row">
+					  <div class="col-lg-8">
+						<div class="header-text">
+						  <h2>
+							<em>Meet</em> Our<br />Development <em>Team</em>
+						  </h2>
+						  <div class="div-dec"></div>
+						  <p>
+							Find out more about the creators of Roguelike Dungeon Crawler.
+						  </p>
+						  <div class="buttons">
+							<div class="green-button">
+							  <a href="our-team.html">Explore Team</a>
+							</div>
+							<div class="orange-button">
+							  <a href="#">Contact Us</a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</div>
-		</div>
-		<!-- Content Code End -->
+			<div class="swiper-button-next swiper-button-white"></div>
+			<div class="swiper-button-prev swiper-button-white"></div>
+		  </div>
+	  
+		  <!-- ***** Main Banner Area End ***** -->
+		  <script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var mySwiper = new Swiper('.swiper-container', {
+					// Optional parameters
+					direction: 'horizontal',
+					loop: true,
+					
+					// If you need pagination
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					
+					// Navigation arrows
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					
+					// And if you need scrollbar
+					scrollbar: {
+						el: '.swiper-scrollbar',
+					},
+				});
+			});
+			</script>
+			
+	  
+		  <div class="col-lg-6 offset-lg-3" id="purpose">
+			<div class="section-heading">
+			  <h6>Introduction</h6>
+			  <h4>The Purpose of Our Game</h4>
+			</div>
+			<p>
+			  The purpose of developing this roguelike dungeon crawler game is to
+			  provide both new and experienced players a new and engaging gaming
+			  experience. Not only will players be able to constantly challenge
+			  themselves with every new level, players will also be able to fully
+			  immerse themselves with the captivating storyline and characters. This
+			  roguelike dungeon crawler is designed to be both pleasing to the eye and
+			  to the ear as the environment is created with vibrant colors and the
+			  sound/music is made to further engage the players.
+			</p>
+			<br />
+			<p>
+			  For the developers, this is an opportunity to challenge themselves and
+			  further develop their skillsets. It's a platform in honing skills such
+			  creativity, critical thinking, team work, coding, and design.
+			</p>
+		  </div>
 		
 	</div>
 	
