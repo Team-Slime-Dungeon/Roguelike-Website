@@ -236,7 +236,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;  /* Centers content vertically */
     align-items: center;  /* Centers content horizontally */
-    overflow-y: auto;  /* Allows scrolling within the container if content overflows */
+    overflow-y: hidden;  
 	overflow-x: hidden;
 }
 
