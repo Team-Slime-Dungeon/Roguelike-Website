@@ -2,8 +2,8 @@
     text-align: center;
     margin-top: 20px;
     font-size: 2.5rem;
-    color: #333; /* Or any color that fits your design */
-    font-family: 'Reem Kufi Ink', sans-serif; /* Using the custom font you linked */
+    color: #333; 
+    font-family: 'Reem Kufi Ink', sans-serif; 
 }
 .feature-container {
     width: 100%;
@@ -23,22 +23,22 @@
     margin: 20px;
     background: white;
     width: 80%;
-    border-radius: 4px; /* Optional: to have rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-    transform: scale(1); /* Default scale */
+    border-radius: 4px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transform: scale(1);
 }
 
 .feature:hover {
-    transform: scale(1.03); /* Slightly increase size on hover */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+    transform: scale(1.03); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 }
 
 .feature-image img {
     width: 80%;
     height: auto;
     display: block;
-    overflow: hidden; /* In case of rounded corners, to clip the image */
-    border-radius: 4px; /* Optional: to have rounded corners */
+    overflow: hidden; 
+    border-radius: 4px; 
 }
 
 .feature-text {
