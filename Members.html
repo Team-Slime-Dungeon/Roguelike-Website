@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Roguelike Dungeon Crawler</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roguelike Dungeon Crawler</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Ensure only one link to style.css with cache busting -->
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="stylesheet" href="style-members.css">
+</head>
 <body>
     <nav>
         <div class="menu">
             <!-- logo -->
+            <div class="logo2">
+                <img src="img/csunicon.png">
+            </div>
             <div class="logo">
                 <img src="img/title.png">
             </div>
@@ -22,11 +28,6 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul>
-                <li>
-                    <div class="MobNavBtns">
-                        <button>Play Now</button>
-                    </div>
-                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
@@ -34,18 +35,111 @@
                 <li><a href="Members.html">Members</a></li>
                 <li><a href="Timeline.html">Timeline</a></li>
             </ul>
-            <!-- Menu Bar Code End -->
-        
             <!-- Header Button Code -->
             <div class="NavBtns">
                 <button>Follow</button>
             </div>
-            <!-- Header Button Code End -->
         </div>
     </nav>
-    <!-- Top Header Code End -->
 
-   <!-- Members page content here -->
+    <!-- Main container for members and skills -->
+    <div class="main-container" style="display: flex;">
+        <!-- Members Section -->
+        <div class="member-area"  id="members-desktop" style="flex: 1; padding: 40px; background-color: #f0f0f0;">
+            <h2 id="teamtitle">Our Team</h2>
+            <ul class="team">
+                <!-- Members List -->
+                <!-- Example Member -->
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Elizabeth Morgan</h3>
+                        <p>Project Lead, Artist, and more. <br><a href="https://github.com/Quiet-XOF">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Jesse Carrillo</h3>
+                        <p>Scrum Master, Enemy Design, and Environment Coder.<br><a href="https://github.com/JesseCarrilloCS">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Kobi Sherman</h3>
+                        <p>Dungeon Generation Coder and Music/Sound.<br><a href="https://github.com/kobisherm">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Ricardo Santana</h3>
+                        <p>Menu, Camera control and Settings UI.<br><a href="https://github.com/rickkk09">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Javier Galan Garcia</h3>
+                        <p>Concepts and Designs, Player Coder and Camera Coder.<br><a href="https://github.com/KillerSV13">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Jacqueline Padilla</h3>
+                        <p>Player Controls, Dialogue, and Companion System.<br><a href="https://github.com/jacqueline011">Github</a></p>
+                    </div>
+                </li>
+                <li class="member co-funder">
+                    <div class="thumb"><img src="img/Godot.png"></div>
+                    <div class="description">
+                        <h3 id="name-title">Christian Sanchez</h3>
+                        <p>Inventory GUI, Pause/settings, Item pickup and General Coding, and Enemy AI.<br><a href="https://github.com/Chris45623">Github</a></p>
+                    </div>
+                </li>
+                <!-- Add more members as needed -->
+            </ul>
+            <div class="member-area-mobile"  id="members-mobile2" display: none;>
+                <div>
+                    <!-- Each member's info is condensed into a paragraph -->
+                    <p><strong>Elizabeth Morgan:</strong> Project Lead, Artist, and more. <a href="https://github.com/Quiet-XOF">Github</a></p>
+                    <p><strong>Jesse Carrillo:</strong> Scrum Master, Enemy Design, and Environment Coder. <a href="https://github.com/JesseCarrilloCS">Github</a></p>
+                    <p><strong>Kobi Sherman:</strong> Dungeon Generation Coder and Music/Sound. <a href="https://github.com/kobisherm">Github</a></p>
+                    <p><strong>Ricardo Santana:</strong> Menu, Camera control and Settings UI. <a href="https://github.com/rickkk09">Github</a></p>
+                    <p><strong>Javier Galan Garcia:</strong> Concepts and Designs, Player Coder and Camera Coder. <a href="https://github.com/KillerSV13">Github</a></p>
+                    <p><strong>Jacqueline Padilla:</strong> Player Controls, Dialogue, and Companion System. <a href="https://github.com/jacqueline011">Github</a></p>
+                    <p><strong>Christian Sanchez:</strong> Inventory GUI, Pause/settings, Item pickup and General Coding, and Enemy AI. <a href="https://github.com/Chris45623">Github</a></p>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <!-- Skills Section -->
+        <div class="skills-area" id="skills" style="flex: 1; padding: 20px; background-color: #f0f0f0;">
+            <h2 id="skillstitle">Skills Used in our Project</h2>
+            <p>This game was created with our teamwork and the wide range of skills our team brought to this project.
+                We started by looking into learning Godot 4, a whole new coding language, to build the core 
+                mechanics of the game. We created all the art assets you see, from the environments to the player 
+                and monsters. We even learned how to animate everything, bringing your character, enemies, and the
+                 world itself to life. On top of that, we composed the music and sound effects to create an immersive
+                  experience. We couldn't have done it all without our team's collaboration. We constantly helped 
+                  each other out, shared our knowledge, and combined our unique talents to make this game something
+                   we are proud of.</p>
+            <ul>
+                <li><strong>Game Design:</strong> We focused on gameplay mechanics, ensuring the game is fun and rewarding to play repeatedly.</li> <br>
+                <li><strong>UI Design:</strong> We created a user interface that is clear to understand and have the main focus on the gameplay.</li> <br>
+                <li><strong>Problem Solving:</strong> We encountered many technical issues and problems along the way, but our team's problem-solving skills kept us moving forward.</li> <br>
+                <li><strong>Testing:</strong> We constantly test the game to make sure we get rid of any unwanted bugs and issues.</li> <br>
+                <li><strong>Time Management:</strong> We all had multiple tasks, met deadlines, and ensured all parts of the game came together seamlessly.</li> <br>
+            </ul>
+            <img src="img/Main Menu Demo.gif" alt="image" id="imgdesign" style="width: 80%; height: auto;" style="box-shadow: black;">
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
