@@ -228,7 +228,7 @@ h3 {
     top: 0;
     right: 0;
     width: 50%;  /* Adjust based on your design preference */
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fff;  /* Example background color */
     padding: 40px;
     box-sizing: border-box;
