@@ -27,9 +27,9 @@
               </label>
               <ul>
                   <li>
-                      <div class="MobNavBtns">
-                          <button>Play Now</button>
-                      </div>
+                    <div class="MobNavBtns">
+                      <button id="playNowButton">Play Now</button>
+                    </div> 
                   </li>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="Contact.html">Contact</a></li>
@@ -39,12 +39,14 @@
                   <li><a href="Timeline.html">Timeline</a></li>
               </ul>
               <!-- Menu Bar Code End -->
+              <script>
+                document.getElementById('playNowButton').addEventListener('click', function() {
+                    window.location.href = 'https://github.com/Team-Slime-Dungeon/Roguelike-Dungeon-Crawler/releases'; // Change URL to your desired link
+                });
+            </script>
+
           
-              <!-- Header Button Code -->
-              <div class="NavBtns">
-                  <button>Follow</button>
-              </div>
-              <!-- Header Button Code End -->
+              
           </div>
       </nav>
       <!-- Top Header Code End -->

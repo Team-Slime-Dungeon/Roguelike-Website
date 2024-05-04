@@ -36,8 +36,8 @@
 				<ul>
 					<li>
 						<div class="MobNavBtns">
-							<button>Play Now</button>
-						</div>
+							<button id="playNowButton">Play Now</button>
+						</div>	
 					</li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="Contact.html">Contact</a></li>
@@ -47,12 +47,23 @@
 					<li><a href="Timeline.html">Timeline</a></li>
 				</ul>
 				<!-- Menu Bar Code End -->
+				<script>
+					document.getElementById('playNowButton').addEventListener('click', function() {
+						window.location.href = 'https://github.com/Team-Slime-Dungeon/Roguelike-Dungeon-Crawler/releases'; // Change URL to your desired link
+					});
+				</script>
+
 			
 				<!-- Header Button Code -->
 				<div class="NavBtns">
-					<button>Follow</button>
+					<button id="playNowButton2">Play Now</button>
 				</div>
 				<!-- Header Button Code End -->
+				<script>
+					document.getElementById('playNowButton2').addEventListener('click', function() {
+						window.location.href = 'https://github.com/Team-Slime-Dungeon/Roguelike-Dungeon-Crawler/releases'; // Change URL to your desired link
+					});
+				</script>
 			</div>
 		</nav>
 		<!-- Top Header Code End -->
@@ -148,10 +159,10 @@
 						  </p>
 						  <div class="buttons">
 							<div class="green-button">
-							  <a href="our-team.html">Explore Team</a>
+							  <a href="Members.html">Explore Team</a>
 							</div>
 							<div class="orange-button">
-							  <a href="#">Contact Us</a>
+							  <a href="Contact.html">Contact Us</a>
 							</div>
 						  </div>
 						</div>
